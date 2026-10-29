@@ -1,0 +1,6 @@
+{
+  "name": "Sashwat Dhakal — Interactive 3D Portfolio",
+  "description": "Interactive 3D portfolio of Sashwat Dhakal featuring atmosphere themes, WebGL showcases, Triton, Jagireyy Job Coach, Spline-inspired AI Business Concierge, Luxury Cinema Hall Reservation demo, and a customizable Admin CMS Portal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
