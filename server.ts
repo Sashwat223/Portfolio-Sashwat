@@ -92,6 +92,12 @@ async function startServer() {
 
   app.use(express.json({ limit: '2mb' }));
 
+  // TikTok Developers Site Verification Endpoint
+  app.get('/tiktokygyK6zvI6yHU6rvtPPwcLuT3NdUgSvyP.txt', (_req, res) => {
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.send('tiktok-developers-site-verification=ygyK6zvI6yHU6rvtPPwcLuT3NdUgSvyP');
+  });
+
   // 1. Admin Authentication Verification Endpoint
   app.post('/api/admin/verify', (req, res) => {
     const { passkey } = req.body || {};

@@ -67,7 +67,7 @@ export const AdminPortalModal: React.FC<AdminPortalModalProps> = ({
 
   // Vercel Dispatch State
   const [vercelToken, setVercelToken] = useState('');
-  const [vercelProjectName, setVercelProjectName] = useState('sashwat-dhakal-portfolio');
+  const [vercelProjectName, setVercelProjectName] = useState('portfolio-sashwat');
   const [deployingVercel, setDeployingVercel] = useState(false);
   const [vercelDeployUrl, setVercelDeployUrl] = useState('');
   const [vercelError, setVercelError] = useState('');

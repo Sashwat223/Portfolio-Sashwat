@@ -13,11 +13,24 @@
       "destination": "/index.html"
     },
     {
-      "source": "/((?!api/|assets/).*)",
+      "source": "/portal",
       "destination": "/index.html"
     }
   ],
   "headers": [
+    {
+      "source": "/tiktok(.*)\\.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [

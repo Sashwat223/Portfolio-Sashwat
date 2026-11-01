@@ -37,6 +37,13 @@ export default async function handler(
   const method = req.method || 'GET';
   const adminKey = req.headers['x-admin-passkey'] as string | undefined;
 
+  if (url.includes('tiktokygyK6zvI6yHU6rvtPPwcLuT3NdUgSvyP.txt')) {
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain; charset=utf-8');
+    res.end('tiktok-developers-site-verification=ygyK6zvI6yHU6rvtPPwcLuT3NdUgSvyP');
+    return;
+  }
+
   if (url.startsWith('/api/admin/verify') && method === 'POST') {
     const body = req.body || {};
     if (isValidAdminKey(String(body.passkey || ''), cachedConfig)) {
